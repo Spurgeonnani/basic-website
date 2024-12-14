@@ -1,0 +1,463 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1c;
+    color: #fff;
+}
+
+header {
+    background-color: #CCFF00;
+    padding: 15px;
+    text-align: right;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #1c1c1c;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+/* Page 1: About Section */
+.about-section {
+    padding: 20px;
+    font-size: 20px;
+    color: #CCFF00;
+    position: relative;
+}
+
+.about-content {
+    width: 1200px;
+    height: 500px;
+    position: relative;
+    margin: 0 auto;
+    display: block;
+}
+
+.name-box {
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    text-align: center;
+    width: 300px;
+}
+
+.name-surname-box, .profession-box {
+    background-color: #CCFF00;
+    color: #1c1c1c;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.name, .surname {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.profession {
+    font-size: 28px;
+}
+
+.description-box {
+    margin-top: 10px;
+    text-align: left;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.profile-picture {
+    position: absolute;
+    top: 150px;
+    left: 500px;
+}
+
+.profile-picture img {
+    width: 300px;
+    height: 300px;
+    border: 5px solid #CCFF00;
+}
+
+.skills-box {
+    position: absolute;
+    top: 150px;
+    right: 100px;
+    width: 250px;
+    background-color: transparent;
+}
+
+.skills-box h2 {
+    font-size: 32px;
+    color: #CCFF00;
+}
+
+.skills-box ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 28px;
+    color: #fff;
+}
+
+.skills-box ul li {
+    margin-bottom: 15px;
+}
+
+/* Projects Section */
+.projects-section {
+    padding: 50px;
+    color: #CCFF00;
+    font-size: 20px;
+    background-color: #252525;
+}
+
+.projects-content {
+    margin: 0 auto;
+    overflow: hidden; /* Ensures the floats are cleared */
+    width: 100%;
+}
+
+.project-item {
+    float: left; /* Aligns items side by side */
+    width: 48%; /* Adjust to fit two items per row with space between */
+    margin: 1%; /* Adds spacing between items */
+    background-color: #1c1c1c;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    box-sizing: border-box; /* Includes padding and border in width calculation */
+}
+
+.project-img img {
+    float: left; /* Align image to the left */
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.project-details {
+    overflow: hidden; /* Clears float for content alignment */
+}
+
+.project-details h2 {
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.project-details p {
+    color: #ccc;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+/* Page 3: Experience, Internships, and Blogs */
+.experience-section {
+    padding: 50px;
+    background-color: #333333;
+    overflow: hidden;
+}
+
+.section-header {
+    overflow: hidden;
+    width: 100%;
+}
+
+.experience-title {
+    float: left;
+    width: 45%;
+    font-size: 36px;
+    color: #CCFF00;
+}
+
+.internships-title {
+    float: right;
+    width: 45%;
+    text-align: right;
+    font-size: 36px;
+    color: #CCFF00;
+}
+
+.experience-content {
+    float: left;
+    width: 45%;
+}
+
+.experience-item {
+    margin-bottom: 15px;
+    border: 2px solid #fff;
+    padding: 20px;
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.experience-img img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.experience-details h2 {
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.experience-details p {
+    color: #ccc;
+    font-size: 16px;
+}
+
+.internships-section {
+    float: right;
+    width: 45%;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.internship-item {
+    margin-bottom: 20px;
+    border: 2px solid #fff;
+    padding: 20px;
+    background-color: #1c1c1c;
+    border-radius: 10px;
+}
+
+.internship-img img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    float: left;
+}
+
+.internship-details {
+    overflow: hidden;
+}
+
+.internship-details h2 {
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.internship-details p {
+    color: #ccc;
+    font-size: 16px;
+}
+
+
+.blogs-section {
+    clear: both; /* Ensures alignment below floated content */
+    width: 45%;
+    float: right;
+    margin-top: 0px; /* Reduce excessive spacing */
+}
+
+.blog-item {
+    margin-bottom: 20px;
+    border: 2px solid #fff;
+    padding: 20px;
+    background-color: #1c1c1c;
+    border-radius: 10px;
+}
+
+.blog-img img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    float: left;
+}
+
+.blog-details {
+    overflow: hidden;
+}
+
+.blog-details h2 {
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.blog-details p {
+    color: #ccc;
+    font-size: 16px;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Page 4: Education and Contact Me Section */
+.edu-contact-section {
+    padding: 50px;
+    overflow: hidden;
+}
+
+.education {
+    float: left;
+    width: 45%;
+}
+
+.education h1 {
+    font-size: 36px;
+    color: #CCFF00;
+}
+
+.education-item {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    overflow: hidden;
+}
+
+.education-img img {
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.education-details {
+    overflow: hidden;
+}
+
+.contact-me {
+    float: right;
+    width: 45%;
+}
+
+.contact-me h1 {
+    font-size: 36px;
+    color: #CCFF00;
+}
+
+form input, form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    padding: 10px;
+    background-color: #CCFF00;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #1c1c1c;
+}
+
+form button:hover {
+    background-color: #b3ff00;
+}
+/* Footer Section */
+.footer {
+    background-color: #333; /* Grey background */
+    color: #fff; /* White text */
+    padding: 20px 50px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: inline-block;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-links a {
+    color: #CCFF00; /* Accent color for links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+.social-icons {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.social-icons img {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    margin: 0 10px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.footer-socials {
+    margin-top: 10px;
+}
+
+.footer-socials a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-socials a:hover {
+    text-decoration: underline;
+}
+.footer-links a:hover {
+    color: #b3ff00;
+}
+
+.social-icons img:hover {
+    border-color: #b3ff00;
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+
+/* Scroll to Top Arrow Button */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #CCFF00;
+    color: #1c1c1c;
+    font-size: 24px;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    display: none;
+    text-decoration: none;
+}
+
+.scroll-to-top:hover {
+    background-color: #b3ff00;
+}
